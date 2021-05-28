@@ -2,12 +2,16 @@ local function Reply(msg)
 local text = msg.content_.text_
 if not database:get(bot_id..'Reply:Status'..msg.chat_id_) then
 if text == 'مطور السورس' or text == 'مطور سناب' then
-TextReply = '[--𝘛𝘜!𝘖𝘍𝘌--](t.me/Z22SS)'
+TextReply = '╔════✦❖✦════╗
+                -𝗧!𝗨𝗢𝗳𝗘.
+╚════✦❖✦════╝(t.me/Yk_YY)'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'منو المطور' or text == 'منو مطور' then
-TextReply = '[--𝘛𝘜!𝘖𝘍𝘌--](t.me/Z22SS) حبيبي هذا مطور السورس '
+TextReply = '╔════✦❖✦════╗
+                -𝗧!𝗨𝗢𝗳𝗘.
+╚════✦❖✦════╝(t.me/Yk_YY) حبيبي هذا مطور السورس '
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
