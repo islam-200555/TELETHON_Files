@@ -27,7 +27,7 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'خوش سورس' or text == 'سورس سناب'  then
-TextReply = '[--𝘛𝘜!𝘖𝘍𝘌--](t.me/yk_yy) حبيبي هذا قناه السورس'
+TextReply = '[--S𝗡𝗔𝗣 T𝗘𝗔𝗠--](t.me/iinzzz) حبيبي هذا قناه السورس'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end    
