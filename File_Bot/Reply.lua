@@ -2,15 +2,35 @@ local function Reply(msg)
 local text = msg.content_.text_
 if not database:get(bot_id..'Reply:Status'..msg.chat_id_) then
 if text == 'مطور السورس' or text == 'مطور سناب' then
-TextReply = '[- 𝘛𝘜!𝘖𝘍𝘌.](t.me/Yk_YY)'
+TextReply = '[--𝘛𝘜!𝘖𝘍𝘌--](t.me/yk_yy)'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text == 'منو المطور' or text == 'منو مطور' then
-TextReply = '[- 𝘛𝘜!𝘖𝘍𝘌.](t.me/Yk_YY) حبيبي هذا مطور السورس '
+if text == 'منو المطور' or text == 'منو مطور'  then
+TextReply = '[--𝘛𝘜!𝘖𝘍𝘌--](t.me/yk_yy) حبيبي هذا مطور السورس'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
+if text == 'انصبلك'  or text == 'انصبلك بوت'  then
+TextReply = '[--𝘛𝘜!𝘖𝘍𝘌--](t.me/yk_yy) حبيبي هذا ينصبلك مطور السورس'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'عجبني البوت' or text == 'اريد بوت'  then
+TextReply = '[--𝘛𝘜!𝘖𝘍𝘌--](t.me/yk_yy) حبيبي هذا ينصبلك مطور السورس'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'اريد مطور' or text == 'منو منصبلك'  then
+TextReply = '[--𝘛𝘜!𝘖𝘍𝘌--](t.me/yk_yy) حبيبي هذا مطور السورس'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'خوش سورس' or text == 'سورس سناب'  then
+TextReply = '[--𝘛𝘜!𝘖𝘍𝘌--](t.me/yk_yy) حبيبي هذا قناه السورس'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end    
 if text == 'هلو' then
 TextReply = 'هلاوات يكلبي نورت'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
@@ -300,13 +320,13 @@ end
 
 if text == 'تفعيل ردود البوت' and Manager(msg) then
 database:del(bot_id..'Reply:Status'..msg.chat_id_)
-send(msg.chat_id_, msg.id_,'≉︙ تم تفعيل ردود البوت')
+send(msg.chat_id_, msg.id_,'⌯ ⁞ تم تفعيل ردود البوت')
 return false
 end
 
 if text == 'تعطيل ردود البوت' and Manager(msg) then
 database:set(bot_id..'Reply:Status'..msg.chat_id_,true)
-send(msg.chat_id_, msg.id_,'≉︙ تم تعطيل ردود البوت')
+send(msg.chat_id_, msg.id_,'⌯ ⁞ تم تعطيل ردود البوت')
 return false
 end
 
