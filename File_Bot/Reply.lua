@@ -332,5 +332,5 @@ end
 
 end
 return {
-SNAP = Reply
+TEAMTELETHON = Reply
 }
